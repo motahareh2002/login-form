@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- styles -->
+        <link rel="stylesheet" href="style.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    </head>
+    <body>
+        <div class="form">
+            <div class="btn">
+                <button class="signUpBtn">SIGN UP</button>
+                <button class="loginBtn">LOG IN</button>
+            </div>
+            <form class="form-signUp">
+                <input type="text" class="input input-name" placeholder="Name"
+                    onblur="usernameBlur()">
+                <span class="username-blur">must contain character is 8(Min)</span>
+                <input type="email" class="input input-email"
+                    placeholder="Email ID">
+                <input type="password" class="input input-pass"
+                    placeholder="Password" onblur="passwordBlur()">
+                <span class="passBlur">must contain character is 12(Min)</span>
+                <input type="password" class="input confim-pass"
+                    onblur="confomPasswordBlur()"
+                    placeholder="confirm Password">
+                <span class="confimPassBlur">must contain character is 12(Min)</span>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <span class="agree">I agree with term & conditions</span>
+                </div>
+                <button class="register">REGISTER</button>
+            </form>
+            <form class="form-signIn">
+                <input type="email" class="input" placeholder="Email ID">
+                <input type="password" class="input" placeholder="Password">
+                <div class="checkbox-2">
+                    <input type="checkbox">
+                    <span class="agree">Keep me signed in on this device</span>
+                </div>
+                <button class="register">REGISTER</button>
+            </form>
+        </div>
+        <!-- javaScript -->
+        <script src="./script.js"></script>
+    </body>
+</html>
